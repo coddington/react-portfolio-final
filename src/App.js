@@ -7,9 +7,15 @@ import GlobalStyle from "./globalStyles"
 //Components
 import Main from './components/Main';
 import AboutPage from './components/AboutPage';
-import BlogPage from './components/BlogPage';
-import WorkPage from './components/WorkPage';
-import MySkillsPage from './components/MySkillsPage';
+import FactPage from './components/FactPage';
+import VisualizePage from './components/VisualizePage';
+import AboutUs from './components/AboutUs';
+import ArtDesign from "./components/ArtDesign";
+import Health from "./components/Health";
+import Books from "./components/Books"
+import Education from "./components/Education";
+import Entertainment from "./components/Entertainment";
+import Communication from "./components/Communication";
 import { AnimatePresence } from "framer-motion";
 import SoundBar from "./subComponents/SoundBar";
 
@@ -31,9 +37,18 @@ function App() {
 <Switch  location={location} key={location.pathname}>
       <Route exact path="/" component={Main}/>
       <Route exact path="/about" component={AboutPage}/>
-      <Route exact path="/blog" component={BlogPage}/>
-      <Route exact path="/work" component={WorkPage}/>
-      <Route exact path="/skills" component={MySkillsPage}/>
+      <Route exact path="/fact" component={FactPage}/>
+      <Route exact path="/visualize" component={VisualizePage}/>
+      <Route exact path="/aboutus" component={AboutUs}/>
+      <Route exact path="/artdesign" component={ArtDesign}/>
+      <Route exact path="/health" component={Health}/>
+      <Route exact path="/books" component={Books}/>
+      <Route exact path="/education" component={Education}/>
+      <Route exact path="/entertainment" component={Entertainment}/>
+      <Route exact path="/communication" component={Communication}/>
+      
+      
+
 
     </Switch>
 </AnimatePresence>

@@ -36,7 +36,7 @@ right: calc(1rem + 2vw);
 text-decoration: none;
 z-index:1;
 `
-const BLOG = styled(NavLink)`
+const Fact = styled(NavLink)`
 color: ${props => props.theme.text};
 position: absolute;
 top: 50%;
@@ -45,7 +45,7 @@ transform: rotate(90deg) translate(-50%, -50%);
 text-decoration: none;
 z-index:1;
 `
-const WORK = styled(NavLink)`
+const Visualize = styled(NavLink)`
 color: ${props => props.click ? props.theme.body : props.theme.text};
 
 position: absolute;
@@ -72,7 +72,7 @@ color: ${props => props.click ? props.theme.body : props.theme.text};
 text-decoration: none;
 z-index:1;
 `
-const SKILLS = styled(NavLink)`
+const Aboutus = styled(NavLink)`
 color: ${props => props.theme.text};
 text-decoration: none;
 z-index:1;
@@ -145,7 +145,7 @@ const Main = () => {
                 <span>click here</span>
             </Center>
 
-            <Contact target="_blank" to={{pathname:"mailto:codebucks27@gmail.com"}}>
+            <Contact target="_blank" to={{pathname:"mailto:neeraj.2@iitj.ac.in"}}>
                 <motion.h2
                 initial={{
                     y:-200,
@@ -159,10 +159,10 @@ const Main = () => {
                 whileTap={{scale: 0.9}}
                 
                 >
-                    Say hi..
+                    Say hi to developers
                 </motion.h2>
             </Contact>
-            <BLOG to="/blog">
+            <Fact to="/fact">
                 <motion.h2
                 initial={{
                     y:-200,
@@ -175,10 +175,10 @@ const Main = () => {
                 whileHover={{scale: 1.1}}
                 whileTap={{scale: 0.9}}
                 >
-                    Blog
+                    Facts
                 </motion.h2>
-            </BLOG>
-            <WORK to="/work" click={+click}>
+            </Fact>
+            <Visualize to="/visualize" click={+click}>
                 <motion.h2
                 initial={{
                     y:-200,
@@ -191,9 +191,9 @@ const Main = () => {
                  whileHover={{scale: 1.1}}
                 whileTap={{scale: 0.9}}
                 >
-                    Work
+                   Visualize
                 </motion.h2>
-            </WORK>
+            </Visualize>
             <BottomBar>
             <ABOUT to="/about" click={+click}>
                 <motion.h2
@@ -208,10 +208,10 @@ const Main = () => {
                  whileHover={{scale: 1.1}}
                 whileTap={{scale: 0.9}}
                 >
-                    About.
+                    What is this?
                 </motion.h2>
             </ABOUT>
-            <SKILLS to="/skills">
+            <Aboutus to="/aboutus">
                 <motion.h2
                 initial={{
                     y:200,
@@ -224,9 +224,9 @@ const Main = () => {
                  whileHover={{scale: 1.1}}
                 whileTap={{scale: 0.9}}
                 >
-                    My Skills.
+                    About Us
                 </motion.h2>
-            </SKILLS>
+            </Aboutus>
 
             </BottomBar>
 

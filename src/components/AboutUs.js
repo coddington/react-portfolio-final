@@ -82,7 +82,7 @@ ul,p{
 }
 `
 
-const MySkillsPage = () => {
+const AboutUs = () => {
     return (
         <ThemeProvider theme={lightTheme}>
 <Box>
@@ -93,56 +93,71 @@ const MySkillsPage = () => {
 <ParticleComponent theme='light' />
             <Main>
 <Title>
-    <Design width={40} height={40} /> Designer
+    <Develope width={40} height={40} /> Tarun Singh Tomar
 </Title>
 <Description>
-I love to create design which speaks, Keep it clean, minimal and simple.
+Hi, I am Tarun Singh Tomar! I am a third year Computer Science and Engineering Student at IITJ.
 </Description>
 <Description>
-<strong>I like to Design</strong>
+<strong>Here is how you can describe me: </strong>
 <ul>
+
     <li>
-        Web Design
+      Code lover
     </li>
     <li>
-        Mobile Apps
+       Sexy Developer, motherfucker
     </li>
-</ul>
-</Description>
-<Description>
-<strong>Tools</strong>
-<ul>
     <li>
-       Figma
+        Valorant Player
+    </li>
+    <li>
+       Upcoming SWE intern @Adobe
+    </li>
+    <li>
+         Chess lover
+    </li>
+    <li>
+        Listens to Billie Eilish
     </li>
     
+
 </ul>
 </Description>
+
 
             </Main>
             <Main>
 <Title>
-    <Develope width={40} height={40} /> Frontend Developer
+    <Develope width={40} height={40} /> Neeraj Anand
 </Title>
 <Description>
-I value business or brand for which i'm creating, thus i enjoy bringing new ideas to life.
+Hi, I am Neeraj Anand! I am one of Tarun's batchmates :D
 </Description>
 <Description>
-<strong>Skills</strong>
-<p>
-Html, Css, Js, React, Redux, Sass, Bootstrap, Tailwind, Firebase etc.
-</p>
-</Description>
-<Description>
-<strong>Tools</strong>
-<p>
-VScode, Github, Codepen etc.
-</p>
+<strong>Here is how you can describe me: </strong>
+<ul>
+    <li>
+       Code Addict
+    </li>
+    <li>
+       Bug Creator
+    </li>
+    <li>
+       Upcoming SDE intern @Microsoft
+    </li>
+    <li>
+         Chess lover
+    </li>
+    <li>
+        Listens to Harry Styles, Jeremy Zucker, and Justin Bieber
+    </li>
+</ul>
 </Description>
 
             </Main>
 
-            <BigTitle text="SKILLS" top="80%" right="30%" />
+            <BigTitle text="Thank you" top="80%" right="30%" />
 
         </Box>
 
@@ -151,4 +166,4 @@ VScode, Github, Codepen etc.
     )
 }
 
-export default MySkillsPage
+export default AboutUs

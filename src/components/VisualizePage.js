@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from 'react'
+import { Route, Switch, useLocation } from "react-router"
 import styled, { ThemeProvider } from 'styled-components'
 import {DarkTheme} from './Themes';
 import {motion} from 'framer-motion';
@@ -7,7 +8,7 @@ import LogoComponent from '../subComponents/LogoComponent';
 import SocialIcons from '../subComponents/SocialIcons';
 import PowerButton from '../subComponents/PowerButton';
 
-import { Work } from "../data/WorkData";
+import { Categories } from "../data/CategoryData";
 import Card from '../subComponents/Card';
 import { YinYang } from './AllSvgs';
 import BigTitlte from '../subComponents/BigTitlte';
@@ -58,7 +59,7 @@ const container = {
 
 }
 
-const WorkPage = () => {
+const VisualizePage = () => {
 
     const ref = useRef(null);
     const yinyang = useRef(null);
@@ -96,7 +97,7 @@ const WorkPage = () => {
 
      <Main ref={ref}   variants={container} initial='hidden' animate='show'  >
          {
-            Work.map( d => 
+            Categories.map( d => 
             <Card key={d.id} data={d} />
             )
          }
@@ -105,7 +106,7 @@ const WorkPage = () => {
     <YinYang width={80} height={80} fill={DarkTheme.text} />
 </Rotate>
 
-<BigTitlte text="WORK" top='10%' right="20%" />
+<BigTitlte text="Visualize" top='10%' right="20%" />
         </Box>
 
         </ThemeProvider>
@@ -113,4 +114,4 @@ const WorkPage = () => {
     )
 }
 
-export default WorkPage
+export default VisualizePage

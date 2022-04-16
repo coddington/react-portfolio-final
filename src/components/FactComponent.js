@@ -63,7 +63,7 @@ padding: 0.5rem 0;
 const Tag= styled.span`
 padding-right: 0.5rem;
 `
-const Date = styled.span`
+const Category = styled.span`
 padding:0.5rem 0
 `
 
@@ -83,14 +83,14 @@ const Item = {
     }
 }
 
-const BlogComponent = (props) => {
-    const {name, tags, date, imgSrc, link} = props.blog;
+const FactComponent = (props) => {
+    const {name, tags, category, imgSrc, link} = props.fact;
     return (
         <Container
         variants={Item}
         
         >
-            <Box target="_blank" to={{pathname: link}}
+            <Box target="_self" to={{pathname:link}}
         >
             <Image img={imgSrc} />
             <Title>{name}</Title>
@@ -101,12 +101,12 @@ const BlogComponent = (props) => {
                     })
                 }
             </HashTags>
-            <Date>
-                {date}
-            </Date>
+            <Category>
+                {category}
+            </Category>
         </Box>
         </Container>
     )
 }
 
-export default BlogComponent
+export default FactComponent

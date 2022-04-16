@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import React from 'react'
+import { Route, Switch, useLocation } from "react-router"
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 import { Github } from '../components/AllSvgs';
@@ -114,11 +115,15 @@ const Card = (props) => {
             </Tags>
             <Footer>
                 <Link to={{pathname: `${demo}`}} target="_blank">
-                    Visit
+                    Visualize
                 </Link>
-                <Git to={{pathname: `${github}`}} target="_blank">
+                {/* <Git to={{pathname: `${github}`}} target="_blank">
                     <Github width={30} height={30} />
-                </Git>
+                </Git> */}
+                {/* use stwich to route to file */}
+              
+
+
             </Footer>
         </Box>
     )
